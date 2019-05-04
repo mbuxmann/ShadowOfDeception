@@ -1,0 +1,79 @@
+[gd_scene load_steps=39 format=2]
+
+[ext_resource path="res://Scripts/EnemyWizzard.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack3.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack4.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack5.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack6.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack7.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack8.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardAttack/wizardAttack9.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle1.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle2.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle3.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle4.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle5.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle6.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle7.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle8.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle9.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardIdle/wizard_idle10.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath1.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath2.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath3.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath4.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath5.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath6.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath7.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath8.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath9.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardDeath/wizardDeath10.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardMove/wizard fly forward1.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardMove/wizard fly forward2.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardMove/wizard fly forward3.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardMove/wizard fly forward4.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardMove/wizard fly forward5.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Enemies/Wizzard/wizzardMove/wizard fly forward6.png" type="Texture" id=36]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "wizzardAttack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "wizzardIdle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": false,
+"name": "wizzardDeath",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "wizzardMove",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+height = 33.6482
+
+[node name="EnemyWizzard" type="KinematicBody2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "wizzardMove"
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.14637, -0.214638 )
+shape = SubResource( 2 )

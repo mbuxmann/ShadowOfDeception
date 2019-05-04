@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Fireball.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/small fire.png" type="Texture" id=2]
+[ext_resource path="res://Sounds/FireAttacked.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/FireballImpact.wav" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4.66765, 4.78471 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "flameIdle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[node name="Fireball" type="Area2D"]
+collision_layer = 8
+collision_mask = 4
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+vframes = 4
+frame = 1
+
+[node name="Position2D" type="Position2D" parent="."]
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 3.0
+anims/flameIdle = SubResource( 2 )
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="FireAttacked" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource( 3 )
+
+[node name="FireballImpact" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource( 4 )
+[connection signal="screen_exited" from="VisibilityEnabler2D" to="." method="_on_VisibilityEnabler2D_screen_exited"]
