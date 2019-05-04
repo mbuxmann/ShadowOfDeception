@@ -14,7 +14,7 @@ var zoom = false
 const RUNSPEED: int = 100
 const JUMP_POWER: int = -250
 const FLOOR = Vector2(0, -1)
-const GRAVITY: int = 10
+const GRAVITY: int = 0
 
 signal rotateMirror
 signal hitFireball
