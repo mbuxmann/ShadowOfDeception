@@ -11,5 +11,6 @@ Things I would do differently next project:
 - Create a full state machine
 - Use global scripts rather then excessive over use of signals
 - Name function better
-
+![](0.png)
 ![](1.png)
+![](2.png)
