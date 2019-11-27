@@ -1,7 +1,8 @@
 # Shadow Of Deception
 Puzzle Platformer created using the Godot engine
 
-After seeing this pixel art tileset and demo from [0x72](https://0x72.itch.io) I just knew that I wanted to recreate this in the Godot Engine. This game is puzzle platformer where you move around and hit mirriors, switches and fireballs to solve problems to proceed in the game.
+After seeing this pixel art tileset and demo from [0x72](https://0x72.itch.io) I just knew that I wanted to recreate this in the Godot Engine. 
+This game is puzzle platformer where you move around and hit mirriors, switches and fireballs to solve problems to proceed in the game.
 
 This was my first game created using the Godot engine with GDScript which is a python-like programming language.
 
