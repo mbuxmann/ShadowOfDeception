@@ -20,7 +20,7 @@ The keys are:
 - X - Attack
 - C - Jump
 
-Play at [Itch.io](https://vivaz.itch.io/shadow-of-deception)
+Play at: [Itch.io](https://vivaz.itch.io/shadow-of-deception)
 
 ### TECH STACK
 
@@ -33,7 +33,6 @@ Play at [Itch.io](https://vivaz.itch.io/shadow-of-deception)
 
 ### SCREENSHOTS
 
-# Screenshots
 ![](screenshots/0.png)
 ![](screenshots/1.png)
 ![](screenshots/2.png)
