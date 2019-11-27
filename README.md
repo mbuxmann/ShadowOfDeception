@@ -1,18 +1,37 @@
 # Shadow Of Deception
 Puzzle Platformer created using the Godot engine
 
-Play at https://vivaz.itch.io/shadow-of-deception
+After seeing this pixel art tileset and demo from [0x72](https://0x72.itch.io) I just knew that I wanted to recreate this in the Godot Engine. This game is puzzle platformer where you move around and hit mirriors, switches and fireballs to solve problems to proceed in the game.
 
-My first game created using the Godot engine with gdscript which is a python-like programming language.
+This was my first game created using the Godot engine with GDScript which is a python-like programming language.
 
 This was a huge learning experience and I've learned a lot creating this game in terms of programming and the Godot engine.
 
-Tileset created by 0x72 (https://0x72.itch.io)
-
 Things I would do differently next project:
+
 - Create a full state machine
 - Use global scripts rather then excessive over use of signals
 - Name function better
+
+The keys are:
+
+- Arrow keys to move arround
+- Z - Resets Level
+- X - Attack
+- C - Jump
+
+Play at [Itch.io](https://vivaz.itch.io/shadow-of-deception)
+
+### TECH STACK
+
+- Godot Engine
+- Aseprite
+
+### FEATURES
+
+- Three playable levels
+
+### SCREENSHOTS
 
 # Screenshots
 ![](screenshots/0.png)
