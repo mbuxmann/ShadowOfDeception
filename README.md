@@ -8,6 +8,8 @@ This was my first game created using the Godot engine with GDScript which is a p
 
 This was a huge learning experience and I've learned a lot creating this game in terms of programming and the Godot engine.
 
+Play at [Itch.io](https://vivaz.itch.io/shadow-of-deception) or [NEWGROUNDS](https://www.newgrounds.com/portal/view/730897)
+
 Things I would do differently next project:
 
 - Create a full state machine
@@ -20,8 +22,6 @@ The Controls:
 - Z - Resets Level
 - X - Attack
 - C - Jump
-
-Play at [Itch.io](https://vivaz.itch.io/shadow-of-deception) or [NEWGROUNDS](https://www.newgrounds.com/portal/view/730897)
 
 ### TECH STACK
 
