@@ -14,7 +14,7 @@ Things I would do differently next project:
 - Use global scripts rather then excessive over use of signals
 - Name function better
 
-The keys are:
+The Controls:
 
 - Arrow keys to move arround
 - Z - Resets Level
