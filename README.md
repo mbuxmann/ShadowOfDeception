@@ -18,7 +18,7 @@ Things I would do differently next project:
 
 The Controls:
 
-- Arrow keys to move arround
+- Arrow keys to move around
 - Z - Resets Level
 - X - Attack
 - C - Jump
